@@ -25,6 +25,7 @@ const StatusComponent = () => {
                 <tr>
                 <th>Микросервис</th>
                 <th>Состояние</th>
+                <th>Ошибка</th>
                 </tr>
             </thead>
         <tbody>
@@ -32,6 +33,7 @@ const StatusComponent = () => {
             <tr>
                 <td>{status.service_name}</td>
                 <td>{status.status}</td>
+                <td>{status.message}</td>
             </tr>
         ))}
         </tbody>
