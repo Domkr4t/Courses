@@ -1,5 +1,5 @@
 
-.text-field__input {
+.user_text-field__input {
     display: block;
     height: calc(2.25rem + 2px);
     padding: 0.375rem 0.75rem;
@@ -17,7 +17,7 @@
     margin-bottom: 10px;
   }
 
-  .textFilter-field__input {
+  .user_textFilter-field__input {
     display: inline-block;;
     height: calc(2.25rem + 2px);
     padding: 0.375rem 0.75rem;
@@ -36,7 +36,7 @@
     margin-right: 10px;
   }
 
-.button{
+.user_button{
     position : relative ;
     display : flex ;
     justify-content : center ;
@@ -53,8 +53,8 @@
     margin-bottom: 10px;
 }
 
-.table {
-	width: 75%;
+.user_table {
+	width: 50%;
 	margin-bottom: 20px;
 	border: 5px solid #fff;
 	border-top: 5px solid #fff;
@@ -65,7 +65,7 @@
 	background: #fff!important;
     margin-top: 30px;
 }
-.table th {
+.user_table th {
 	font-weight: bold;
 	padding: 7px;
 	background: #ffd300;
@@ -75,18 +75,18 @@
 	border-top: 3px solid #fff;
 	border-bottom: 3px solid #ffd300;
 }
-.table td {
+.user_table td {
 	padding: 7px;
 	border: none;
 	border-top: 3px solid #fff;
 	border-bottom: 3px solid #fff;
 	font-size: 15px;
 }
-.table tbody tr:nth-child(even){
+.user_table tbody tr:nth-child(even){
 	background: #f8f8f8!important;
 }
 
-.beatifull_word{
+.user_beatifull_word{
     margin-top: 20px;
     display: flex;
     font-size: 20px;

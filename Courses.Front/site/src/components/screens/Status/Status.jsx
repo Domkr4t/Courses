@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import './Status.css';
+import "/src/assets/styles/Status.css";
 
 const StatusComponent = () => {
   const [statuses, setStatuses] = useState([]);
@@ -19,20 +19,8 @@ const StatusComponent = () => {
   }, []);
 
   return (
-    // <div>
-    //   <h1>Status of Microservices</h1>
-    //   <ul>
-    //     {statuses.map((status, index) => (
-    //       <li key={index}>
-    //         <strong>{status.service_name}:</strong> {status.status}
-    //         {status.message && <span> - {status.message}</span>}
-    //       </li>
-    //     ))}
-    //   </ul>
-    // </div>
-
     <div >
-        <table className='table'>
+        <table className='status_table'>
             <thead>
                 <tr>
                 <th>Микросервис</th>

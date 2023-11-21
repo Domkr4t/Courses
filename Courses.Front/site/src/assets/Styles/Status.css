@@ -1,4 +1,4 @@
-.table {
+.status_table {
 	width: 30%;
 	margin-bottom: 20px;
 	border: 5px solid #fff;
@@ -11,7 +11,7 @@
 	background: #fff!important;
     margin-top: 30px;
 }
-.table th {
+.status_table th {
 	font-weight: bold;
 	padding: 7px;
 	background: #ffd300;
@@ -21,13 +21,13 @@
 	border-top: 3px solid #fff;
 	border-bottom: 3px solid #ffd300;
 }
-.table td {
+.status_table td {
 	padding: 7px;
 	border: none;
 	border-top: 3px solid #fff;
 	border-bottom: 3px solid #fff;
 	font-size: 15px;
 }
-.table tbody tr:nth-child(even){
+.status_table tbody tr:nth-child(even){
 	background: #f8f8f8!important;
 }

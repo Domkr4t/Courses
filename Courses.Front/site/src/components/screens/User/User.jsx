@@ -1,5 +1,5 @@
 import React, { useState, useEffect, Fragment } from 'react';
-import './User.css';
+import "/src/assets/styles/User.css";
 
 const User = () => {
     const [users, setUsers] = useState([]);
@@ -110,18 +110,18 @@ const User = () => {
 return (
         <div>
         <form onSubmit={handleSubmit}>
-            <div className ="beatifull_word" for="login">Общая информация</div>
-            <input className= 'text-field__input' name="name" type="text" value={name} onChange={(e) => setName(e.target.value)} placeholder='ФИО' />
-            <input className= 'text-field__input' name="password" type="text" value={password} onChange={(e) => setPassword(e.target.value)} placeholder='Пароль'/>
-            <input className= 'text-field__input' name="email" type="text" value={email} onChange={(e) => setEmail(e.target.value)} placeholder='Email'/>
-            <input className= 'text-field__input' name="role" type="text" value={role} onChange={(e) => setRole(e.target.value)} placeholder='Роль'/>
-            <button className = 'button' type="submit">Сохранить</button>
+            <div className ="user_beatifull_word" for="login">Общая информация</div>
+            <input className= 'user_text-field__input' name="name" type="text" value={name} onChange={(e) => setName(e.target.value)} placeholder='ФИО' />
+            <input className= 'user_text-field__input' name="password" type="text" value={password} onChange={(e) => setPassword(e.target.value)} placeholder='Пароль'/>
+            <input className= 'user_text-field__input' name="email" type="text" value={email} onChange={(e) => setEmail(e.target.value)} placeholder='Email'/>
+            <input className= 'user_text-field__input' name="role" type="text" value={role} onChange={(e) => setRole(e.target.value)} placeholder='Роль'/>
+            <button className = 'user_button' type="submit">Сохранить</button>
         </form>
-        <div className ="beatifull_word" for="login">Фильтрация</div>
-        <input className='textFilter-field__input' name="filterName" type="text" value={filterName} onChange={handleNameChange} placeholder='Фильтр по ФИО' />
-        <input className='textFilter-field__input' name="filterRole" type="text" value={filterRole} onChange={handleRoleChange} placeholder='Фильтр по роли' />
-        <input className='textFilter-field__input' name="filterCourse" type="text" value={filterCourse} onChange={handleCourseChange} placeholder='Фильтр по курсам' />
-          <table className='table'>
+        <div className ="user_beatifull_word" for="login">Фильтрация</div>
+        <input className='user_textFilter-field__input' name="filterName" type="text" value={filterName} onChange={handleNameChange} placeholder='Фильтр по ФИО' />
+        <input className='user_textFilter-field__input' name="filterRole" type="text" value={filterRole} onChange={handleRoleChange} placeholder='Фильтр по роли' />
+        <input className='user_textFilter-field__input' name="filterCourse" type="text" value={filterCourse} onChange={handleCourseChange} placeholder='Фильтр по курсам' />
+          <table className='user_table'>
             <thead>
               <tr>
                 <th>ФИО</th>
@@ -129,7 +129,6 @@ return (
                 <th>Email</th>
                 <th>Роль</th>
                 <th>Курсы</th>
-                <th></th>
                 <th></th>
               </tr>
             </thead>
@@ -141,9 +140,6 @@ return (
                     <td>{user.email}</td>
                     <td>{user.role}</td>
                     <td>{user.courses}</td>
-                    <td>
-                        <button onClick={() => window.location.href = `/userPage/${user.id}`}>Посмотреть</button>
-                    </td>
                     <td>
                         <button onClick={() => handleDelete(user.id)}>Удалить</button>
                     </td>

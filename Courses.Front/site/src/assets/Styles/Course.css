@@ -1,5 +1,5 @@
 
-.text-field__input {
+.course_text-field__input {
     display: block;
     height: calc(2.25rem + 2px);
     padding: 0.375rem 0.75rem;
@@ -17,7 +17,7 @@
     margin-bottom: 10px;
   }
 
-  .textFilter-field__input {
+  .course_textFilter-field__input {
     display: inline-block;;
     height: calc(2.25rem + 2px);
     padding: 0.375rem 0.75rem;
@@ -35,7 +35,7 @@
     margin-bottom: 10px;
   }
 
-  .text-field__input__big {
+  .course_text-field__input__big {
     display: block;
     width: 20%;
     height: calc(2.25rem + 100px);
@@ -54,7 +54,7 @@
     margin-bottom: 10px;
   }
 
-.button{
+  .course_button{
     position : relative ;
     display : flex ;
     justify-content : center ;
@@ -71,7 +71,7 @@
     margin-bottom: 10px;
 }
 
-.table {
+.course_table {
 	width: 75%;
 	margin-bottom: 20px;
 	border: 5px solid #fff;
@@ -83,7 +83,8 @@
 	background: #fff!important;
     margin-top: 30px;
 }
-.table th {
+
+.course_table th {
 	font-weight: bold;
 	padding: 7px;
 	background: #ffd300;
@@ -93,18 +94,18 @@
 	border-top: 3px solid #fff;
 	border-bottom: 3px solid #ffd300;
 }
-.table td {
+.course_table td {
 	padding: 7px;
 	border: none;
 	border-top: 3px solid #fff;
 	border-bottom: 3px solid #fff;
 	font-size: 15px;
 }
-.table tbody tr:nth-child(even){
+.course_table tbody tr:nth-child(even){
 	background: #f8f8f8!important;
 }
 
-.beatifull_word{
+.course_beatifull_word{
     margin-top: 20px;
     display: flex;
     font-size: 20px;
